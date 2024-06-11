@@ -43,4 +43,4 @@ jobs:
       # Create table
       - name: Cria a tabela no postgress
         run: |
-          PGPASSWORD=${{ secrets.PGPASSWORD }} psql -U ${{ secrets.USER_PG }} -h ${{ secrets.CONNECTION }} -d ${{ secrets.DATABASE }} -i tabela.sql
+          PGPASSWORD=${{ secrets.PGPASSWORD }} psql -U ${{ secrets.USER_PG }} -h ${{ secrets.CONNECTION }} -d ${{ secrets.DATABASE }} -f tabela.sql
